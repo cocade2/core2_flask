@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #0056b3;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.pais, .capital {
+    flex: 1;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.capital {
+    text-align: right;
+    color: #555;
+}
+
+li:nth-child(even) {
+    background-color: #e9ecef; 
+}
+
+@media (max-width: 600px) {
+    li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .pais, .capital {
+        text-align: center;
+        padding: 5px 0;
+    }
+}
